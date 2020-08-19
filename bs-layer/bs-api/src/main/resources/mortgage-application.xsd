@@ -1,0 +1,56 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+
+    <xs:element name="soapApplicationsRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:string"/>
+                <xs:element name="version" type="xs:int"/>
+                <xs:element name="offerId" type="xs:string"/>
+                <xs:element name="productId" type="xs:string"/>
+                <xs:element name="offerDate" type="xs:string"/>
+                <xs:element name="createdDate" type="xs:string"/>
+                <xs:element name="expired" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="soapApplicationsResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="result" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getSoapApplicationsResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <!--<xs:element name="result" type="tns:ArrayOfSoapApplication"/>-->
+                <xs:element name="result" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+<!--
+    <xs:complexType name="soapApplication">
+        <xs:sequence>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="version" type="xs:int"/>
+            <xs:element name="offerId" type="xs:string"/>
+            <xs:element name="productId" type="xs:string"/>
+            <xs:element name="offerDate" type="xs:string"/>
+            <xs:element name="createdDate" type="xs:string"/>
+            <xs:element name="expired" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="soapApplication" nillable="true" type="tns:soapApplication"/>
+
+    <xs:complexType name="ArrayOfSoapApplication">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="ArtPiece" nillable="true" type="soapApplication"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="SoapArrayOfSoapApplication" nillable="true" type="tns:ArrayOfSoapApplication"/>-->
+
+</xs:schema>

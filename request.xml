@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+          xmlns:mso="http://spring.io/guides/gs-producing-web-service">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <mso:soapApplicationsRequest>
+        <mso:id>M31</mso:id>
+        <mso:version>1</mso:version>
+        <mso:offerId>OFF 1</mso:offerId>
+        <mso:productId>PRD 1</mso:productId>
+        <mso:offerDate>25/06/2020</mso:offerDate>
+        <mso:createdDate>25/12/2019</mso:createdDate>
+        <mso:expired>false</mso:expired>
+      </mso:soapApplicationsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

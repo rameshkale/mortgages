@@ -1,0 +1,34 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.2.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    id 'idea'
+}
+
+group 'com.mortgages'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+bootJar {
+    manifest {
+        attributes 'Start-Class': 'com.mortgages.BootApplication'
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    testCompile 'org.junit.jupiter:junit-jupiter:5.4.0'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+
+
+    //implementation 'org.springframework.boot:spring-boot-starter-security'
+    //testCompile 'junit:junit:4.11'
+}
+
+

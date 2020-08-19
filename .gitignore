@@ -1,0 +1,12 @@
+.gradle/*
+*.bin
+*.lock
+*.class
+*/.idea/*
+*/build/*
+*.jar
+gc.properties
+cache.properties
+*.iml
+*.ipr
+*.iws
