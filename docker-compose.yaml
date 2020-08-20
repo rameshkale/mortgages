@@ -11,15 +11,15 @@ services:
     expose:
       - 8080
     ports:
-      - '9443:8080'
+      - '9442:8080'
 
   dslayer:
-    image: bslayer
-    container_name: bslayer
+    image: dslayer
+    container_name: dslayer
     build:
       context: .
       dockerfile: ds-layer/Dockerfile    
     expose:
       - 8080
     ports:
-      - '9442:8080'
+      - '9443:8080'
