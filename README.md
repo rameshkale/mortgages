@@ -1,31 +1,31 @@
 
 
-How to setup work space - 
-
-1. Gradle idea plugin can be used to setup workspace, it will help to pull all required dependencies on local machine - gradle idea
-2. Gradle version gradle-6.5-bin.zip need to place in root directory to execute Dockerfile. 
-3. Docker will take of installing required Java JDK version, Similary on local environment version 1.8 is required. 
-4. gradle build will help to build code base plus generate JAXB bindings. 
-5. gradle bootRun or java -jar <jarfilename> will help to run embedded container in tomcat. 
-6. All required plugins to make jar bootable is places in Manifest.mf and respective start class to boot the application 
-
-
-Sample out put when server starts, bootable application will start and open port generally before 10 seconds. 
-
-
-Scenarios covered in code - 
-
-Scenario 1, Retrieve mortgage applications in natural order of insertion. 
-Scenario 2, Retrieve mortgage applications by Offer Date Ascending 
-Scenario 3, Retrieve mortgage applications by Offer Date Descending  
-Scenario 4, Retrieve mortgage applications by Created Date Ascending 
-Scenario 5, Retrieve mortgage applications by Created Date Descending  
+How to setup work space - </br>
+</br>
+1. Gradle idea plugin can be used to setup workspace, it will help to pull all required dependencies on local machine - gradle idea</br>
+2. Gradle version gradle-6.5-bin.zip need to place in root directory to execute Dockerfile. </br>
+3. Docker will take of installing required Java JDK version, Similary on local environment version 1.8 is required. </br>
+4. gradle build will help to build code base plus generate JAXB bindings. </br>
+5. gradle bootRun or java -jar <jarfilename> will help to run embedded container in tomcat. </br>
+6. All required plugins to make jar bootable is places in Manifest.mf and respective start class to boot the application </br>
+</br>
+</br>
+Sample out put when server starts, bootable application will start and open port generally before 10 seconds. </br>
+</br>
+</br>
+Scenarios covered in code - </br>
+</br>
+Scenario 1, Retrieve mortgage applications in natural order of insertion. </br>
+Scenario 2, Retrieve mortgage applications by Offer Date Ascending </br>
+Scenario 3, Retrieve mortgage applications by Offer Date Descending  </br>
+Scenario 4, Retrieve mortgage applications by Created Date Ascending </br>
+Scenario 5, Retrieve mortgage applications by Created Date Descending  </br>
 Scenario 6, SOAP Interface details for inserting offer using WSDL endpoint, cat command is showing soap request details, curl is executing WSDL request. 
-Scenario 7, Inserting offer into application store using REST interface. 
-Scenario 8, Offer more than six months old,  ERROR 101. 
-Scenario 9, Error when user tries to insert offer with lower version, ERROR 102. 
-Scenario 10, Update existing record when same version of application submitted to store. 
-
+Scenario 7, Inserting offer into application store using REST interface. </br>
+Scenario 8, Offer more than six months old,  ERROR 101. </br>
+Scenario 9, Error when user tries to insert offer with lower version, ERROR 102. </br>
+Scenario 10, Update existing record when same version of application submitted to store. </br>
+</br>
 
 
   .   ____          _            __ _ _
