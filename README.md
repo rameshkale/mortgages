@@ -28,18 +28,6 @@ Scenario 10, Update existing record when same version of application submitted t
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
